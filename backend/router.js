@@ -5,8 +5,7 @@
 这样也比较符合真实企业项目的开发规范，即数据的处理放在后端做，前端只做数据渲染和交互。
  */
 const axios = require('axios')
-const pinyin = require('pinyin')
-const Base64 = require('js-base64').Base64
+// const pinyin = require('pinyin')
 // 获取签名方法
 const getSecuritySign = require('./sign')
 

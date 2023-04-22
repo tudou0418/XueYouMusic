@@ -13,8 +13,9 @@ module.exports = {
   },
   devServer: {
     // Express 实例
-    before(app) {
-      registerRouter(app)
+    onBeforeSetupMiddleware(app) {
+      console.log('1111111111', app)
+      registerRouter(app.app)
     }
   }
 }
